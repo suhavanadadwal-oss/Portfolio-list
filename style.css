@@ -1,0 +1,137 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Main page style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* 3. Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #1e293b;
+    color: white;
+}
+
+nav h2 {
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* 4. Home section */
+.home {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.home h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.home p {
+    font-size: 18px;
+    color: #64748b;
+}
+
+/* 5. Button style */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* 6. Skills and projects */
+section {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+.skills-list,
+.projects-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill,
+.project {
+    background-color: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000012;
+}
+
+/* 7. Contact section */
+#contact {
+    background-color: #e2e8f0;
+}
+
+/* 8. Footer */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* 9. Mobile responsive design */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .skill,
+    .project {
+        width: 100%;
+    }
+}
